@@ -8,6 +8,7 @@ from datetime import datetime, timezone, timedelta
 
 
 class ListingsView(ListAPIView):
+   
     queryset = Listing.objects.order_by('-list_date').filter(is_published=True)
     permission_classes = (permissions.AllowAny,)
     serializer_class = ListingSerializer
