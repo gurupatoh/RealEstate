@@ -25,6 +25,7 @@ const listings = ({ listings }) => {
             );
         });
 
+
         for (let i = 0; i < listings.length; i += 3) {
             result.push(
                 <div className='row'>
